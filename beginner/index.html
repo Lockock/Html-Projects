@@ -1,0 +1,152 @@
+<!DOCTYPE html>                         <!--告訴瀏覽器這個檔案的類型，所以只要創建html都要有這個-->
+
+<html>                                  <!--開始標籤 -->
+    <head>                              <!--裡面放網頁的資訊-->
+         <meta charset="UTF-8"/> <!--跟瀏覽器說我們要用utf-8這個編碼方式進行，通常是有中文內容要用瀏覽器才看得懂 -->
+        <title>林子新的網站</title>      <!--網頁標題 -->
+    </head>
+    <body>
+        hello 我是林子新
+        <!-- 想在網頁寫文章 有h1到h6 我們先用h3 h代表標題 h1最大 h6最小，h1代表最重要的標題，所以一個網頁通常只會有一個 h6最不重要 -->
+        <h2>第一篇文章</h2>
+            <p>今天天氣真好 <b>粗體用b</b> <i>斜體用i</i> <i><b>又粗又斜就是用i跟b一起包起來</b></i> </p>
+            <!-- h是標題 p是文章內容 如果要加粗體用b包起來 如果想要斜體用i -->
+            <!-- html運行由上到下 看到誰誰會先顯示-->
+            <!-- 如果覺得靠太近用br br代表換行-->
+        <br></br>
+            <!-- 因為中間不用寫東西 所以通常都寫<br/>如下所示 想要空間大一點就多幾個br-->
+            <!-- 如果中間想要有水平線 中間用<hr/>這個標籤 所以中間不用加東西的 後面基本上都可以省略掉 像是meta <meta charset="UTF-8"></meta> 原本樣子 改過看上面-->
+        <h2>第二篇文章</h2>
+            <p>今天天氣不好</p>
+        <br/>
+        <hr></hr>
+        <hr/>
+        <h2>第三篇文章</h2>
+
+        <!-- 連結 & 圖片 -->
+        <!-- 如果要超連結 要使用<a></a>標籤 並在裡面放網址 href是標籤得屬性 只要寫在開始標籤的後面 就是那個標籤的屬性 所以寫在meta後面的charset也是他的屬性 然後給他utf-8的編碼-->
+        <a href="https://google.com">google網站</a>
+        <a href="page2.html">第二頁</a>
+        <!-- 當要超連結不在同資料夾裡面 在前面加他的資料夾名稱 如下所示 -->
+        <a href="dir/page3.html">第三頁</a>
+        <!-- a也可以超連結到照片 -->
+        <a href="test.jpg">照片</a>
+
+        <!-- 如果在網站裡面想放圖片 可以用img這個標籤 可以放自己檔案裏面的找片 或是 給連結 -->
+        <!-- 如果覺得照片太大 可以用width height挑整大小 下面那張像素1039(寬)*1399(高) 但圖片變小會被壓縮 如果等比例的話可以只設定高跟寬其中一個 alt 用在照片無法顯示-->
+        <img src="test.jpg" width="600" height="800" alt="照片無法顯示"/>
+        <img src="data:image/jpeg;base64,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"/>
+
+        <!-- 影片 & 崁入yt影片 -->
+        <!-- 用video崁入影片 當影片無法載入時會顯示 瀏覽器無法載入影片 controls是給影片控制功能 如果沒有看起來就像一張圖片-->
+        <video src="myvideo.mkv" controls width="600">瀏覽器無法載入影片</video>
+        <!-- 如果要崁入yt影片的話 到影片有一個分享 崁入 複製貼上就好 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6pTT8gsWTBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- 列表 & 表格 -->
+        <!-- 製作最常去的網站的列表 用ul代表列表，會用黑色點點呈現 ol就會有排序了 列表的內容用li來表示 -->
+        <ul style="color: red;">
+            <li>google</li>
+            <li>facebook</li>
+            <li>ig</li>
+            <li>youtube</li>
+        </ul>
+        <ol style="color: red;">
+            <li>google</li>
+            <li>facebook</li>
+            <li>ig</li>
+            <li>youtube</li>
+        </ol>
+        <!-- 如果想用英文排列 就給ol一個屬性 大寫A就是 A B C D 小寫就是 a b c d 小寫羅馬數字是 i 大寫羅馬字母 I-->
+        <ol type="A" >
+            <li>google</li>
+            <li>facebook</li>
+            <li>ig</li>
+            <li>youtube</li>
+        </ol>
+        <!-- 如果要創建表格就是用table 調表創建表格 行用tr標籤表示  -->
+        <table width="400" style="color: red;">
+            <tr>
+                <td>日期</td>
+                <td>數學</td>
+                <td>英文</td>
+            </tr>
+            <tr>
+                <td>2/8</td>
+                <td>80</td>
+                <td>60</td>
+            </tr>
+        </table>
+
+        <!-- html的容器 div & span -->
+        <!-- div這個容器可以讓我們在裡面存放很多標籤 當我們想要美化網頁或排版 要導入css的技術 如果有善用容器這個標籤 會方便很多
+        舉列 向如果要改字的顏色 不用div要改三次 在48 54跟68行 用div可以一次改 -->
+        <!-- div & span的差別 html標籤有兩種 一種是他的寬度是多少 就佔多少空間 像a標籤 一種是不論寬度多少 直接佔一行 會直接換行 像p標籤  所以div跟span的差別就是這樣 span是第一種 div是第二種 下面有範例 112行 通常比較常用div-->
+        <div style="color: blue;">
+            <ul>
+                <li>google</li>
+                <li>facebook</li>
+                <li>ig</li>
+                <li>youtube</li>
+            </ul>
+            <ol>
+                <li>google</li>
+                <li>facebook</li>
+                <li>ig</li>
+                <li>youtube</li>
+            </ol>
+            <table width="400">
+                <tr>
+                    <td>日期</td>
+                    <td>數學</td>
+                    <td>英文</td>
+                </tr>
+                <tr>
+                    <td>2/8</td>
+                    <td>80</td>
+                    <td>60</td>
+                </tr>
+            </table>
+        </div>
+        
+        <span>span1</span>
+        <span>span2</span>
+        <hr/>
+        <div>div1</div>
+        <div>div2</div>
+
+        <!-- html的輸入標籤 -->
+        <!-- 像是fb的登入頁面 google首頁的搜尋頁面 -->
+        <input type="text" placeholder="請輸入帳號"/>
+        <br/>
+        <br/>
+        <input type="password" placeholder="請輸入密碼"/>
+        <br/>
+        <br/>
+        <input type="date" placeholder="請輸入密碼"/>
+        <br/>
+        <br/>
+        <input type="range" placeholder="請輸入密碼"/>
+        <br/>
+        <br/>
+        <input type="file" placeholder="請輸入密碼"/>
+        <br/>
+        <br/>
+        <input type="checkbox" placeholder="請輸入密碼"/>
+        <br/>
+        <br/>
+        <textarea>請填入自我介紹</textarea>
+
+        <!-- meta標籤 除了告訴瀏覽器要用甚麼編碼 還可以告訴瀏覽器很多其他資訊 141就是在搜尋網站會出現的簡單介紹語 142是作者 143是搜尋關鍵字會找到這個網站 144是視口 用手機或用電腦瀏覽網站 width=device-width寬度是裝置的寬度 initial-scale=1.0起始大小是100趴 這些事meta標籤常用用法 -->
+        <meta name="description" content="我的網站，做得很爛"/>
+        <meta name="author" content="林子新"/>
+        <meta name="keywords" content="我很爛">
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0"/>
+        <br/>
+        <br/>
+        <a style="font-family:Microsoft jhenghei;"class="button minimal" href="https://www.youtube.com/">youtube</a>
+    </body>
+</html>                                 <!--關閉標籤-->
+                                        <!-- html是一層一層，像洋蔥一樣，包在裡面的要縮排 -->
+                                        <!-- 基本標籤  -->
+                                        

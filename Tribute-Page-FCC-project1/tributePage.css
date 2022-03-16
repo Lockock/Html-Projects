@@ -1,0 +1,55 @@
+#main{
+    color:black;
+    background-color: rgba(255, 248, 220, 0.5);
+    text-align: center;
+}
+#title{
+    text-align: center;
+    font-size: 30px;
+}
+#subtitle{
+    background-color: rgba(128, 128, 128, 0.5);
+    font-size: 18px;
+}
+#img-div{
+    width: auto;
+    background-color: white;
+}
+#image{
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+#tribute-info{
+    width: 60%;
+    text-align: left;
+    align-self: center;
+    font-size: 18px;
+    position: relative;
+    left: 20%;
+}
+.list-item{
+    line-height: 25px;
+    margin: 15px 0 15px 0;
+}
+.year{
+    font-weight:bold;
+}
+#quate{
+    width:55%;
+    text-align: justify;
+    align-self: center;
+    font-style: italic;
+    position: relative;
+    left: 25%;
+}
+#tribute-link{
+    font-size: 20px;
+}
+
+#footer{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 40px;
+}
